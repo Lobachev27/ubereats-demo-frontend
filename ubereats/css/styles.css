@@ -7,7 +7,7 @@
   padding-left: 8px;
   padding-right: 8px;
   width: 100%;
-  max-width: 992px;
+  max-width: 976px;
 }
 
 .row {
@@ -208,7 +208,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  min-width: 304px;
+  min-width: 302px;
 }
 
 h1,
@@ -264,11 +264,19 @@ p {
   display: none;
 }
 
+.location--mobile {
+  display: flex;
+  margin-top: 24px;
+}
+
 @media (min-width: 768px) {
   .location {
     display: flex;
     justify-content: center;
     align-content: center;
+  }
+  .location--mobile {
+    display: none;
   }
 }
 
@@ -282,10 +290,12 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 65px;
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   color: #1d1d1d;
+  font-size: 13px;
   line-height: 24px;
   text-align: center;
   text-align-last: center;
@@ -293,11 +303,11 @@ p {
   -moz-appearance: none;
   -ms-progress-appearance: none;
   -webkit-appearance: none;
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
   .location__time {
-    font-size: 13px;
     width: 57px;
     margin-top: 0px;
   }
@@ -333,19 +343,21 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 205px;
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   color: #1d1d1d;
+  font-size: 13px;
   line-height: 24px;
   padding-left: 36px;
   outline: none;
   background: url("../img/location.svg") no-repeat 12px;
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
   .location__address {
-    font-size: 13px;
     width: 215px;
     margin-top: 0px;
   }
@@ -356,6 +368,19 @@ p {
     font-size: 16px;
     width: 292px;
   }
+}
+
+.location__label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #626262;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.location__label:first-child {
+  margin-right: 16px;
 }
 
 /* Buttons */
@@ -425,4 +450,30 @@ p {
 
 .header__button-basket:hover {
   cursor: pointer;
+}
+
+/* Search */
+
+.search {
+  margin-top: 25px;
+}
+
+.search__input {
+  display: flex;
+  padding: 15px 0px 15px 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.5);
+  color: rgba(98, 98, 98, 0.5);
+  font-size: 13px;
+  line-height: 24px;
+  outline: none;
+  background: url("../img/search.svg") no-repeat 0px;
+  background-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .search__input {
+    font-size: 16px;
+  }
 }

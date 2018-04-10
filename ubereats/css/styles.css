@@ -241,10 +241,9 @@ p {
   width: 107px;
 }
 
-@media (min-width: 992px) {
-  .logo {
-    width: 121px;
-  }
+.logo--footer {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .logo__item {
@@ -252,7 +251,14 @@ p {
   width: 107px;
 }
 
+.logo__item--footer {
+  width: 192px;
+}
+
 @media (min-width: 992px) {
+  .logo {
+    width: 121px;
+  }
   .logo__item {
     width: 121px;
   }
@@ -539,4 +545,203 @@ p {
   line-height: 21px;
   color: #1d1d1d;
   margin: 0;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  background: #262626;
+}
+
+.footer__language {
+  background: #3b3b3b;
+  width: 173px;
+  height: 40px;
+  margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .footer__language {
+    width: 176px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__language {
+    width: 227px;
+  }
+}
+
+.footer__select {
+  display: flex;
+  width: 173px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 150px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+  padding-left: 48px;
+  text-transform: uppercase;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-progress-appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 768px) {
+  .footer__select {
+    width: 176px;
+    background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 153px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__select {
+    width: 227px;
+    background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 205px;
+  }
+}
+
+.footer__hashtag {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin: 32px 0px 16px 0px;
+}
+
+.footer__hashtag--green {
+  color: #49a144;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.social__item {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.social__item--facebook {
+  background: url("../img/facebook.svg") no-repeat;
+  position: relative;
+  left: 3px;
+  top: 3px;
+}
+
+.social__item--twitter {
+  background: url("../img/twitter.svg") no-repeat;
+}
+
+.social__item--instagram {
+  background: url("../img/instagram.svg") no-repeat;
+}
+
+.menu__item {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0px 0px 23px 0px;
+}
+
+.footer__menu--first {
+  margin-top: 40px;
+}
+
+.footer__menu--last {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .footer__menu--last {
+    margin-top: 40px;
+    margin-bottom: 48px;
+  }
+}
+
+.footer__apps {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer__app--applestore {
+  width: 107px;
+  height: 36px;
+  background: url(../img/applestore.svg) no-repeat;
+  background-size: cover;
+  margin: 25px 12px;
+}
+
+.footer__app--googleplay {
+  width: 124px;
+  height: 36px;
+  background: url(../img/googleplay.png) no-repeat;
+  background-size: cover;
+  margin: 25px 12px;
+}
+
+@media (min-width: 768px) {
+  .footer__app--applestore {
+    width: 121px;
+    height: 40px;
+    margin: 40px 20px;
+  }
+  .footer__app--googleplay {
+    width: 135px;
+    height: 40px;
+    margin: 40px 20px;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 13px;
+  padding: 12px 0;
+}
+
+.footer__copyright--first {
+  margin: 28px 0 0;
+}
+
+.footer__copyright--last {
+  margin: 0 0 28px;
+}
+
+@media (min-width: 768px) {
+  .footer__copyright {
+    padding: 40px 0;
+    margin: 0;
+  }
+}
+
+/* Scroll */
+
+.scroll--up {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  background: #59bd5a url(../img/arrow.svg) no-repeat center;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .scroll--up {
+    width: 80px;
+    height: 80px;
+  }
 }

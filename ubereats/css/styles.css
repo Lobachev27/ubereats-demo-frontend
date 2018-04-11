@@ -579,7 +579,8 @@ p {
   height: 40px;
   border: none;
   border-radius: 2px;
-  background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 150px;
+  background: url(../img/world.svg) no-repeat 26px,
+    url(../img/select-icon.svg) no-repeat 150px;
   color: #fff;
   font-size: 13px;
   line-height: 15px;
@@ -595,14 +596,16 @@ p {
 @media (min-width: 768px) {
   .footer__select {
     width: 176px;
-    background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 153px;
+    background: url(../img/world.svg) no-repeat 26px,
+      url(../img/select-icon.svg) no-repeat 153px;
   }
 }
 
 @media (min-width: 992px) {
   .footer__select {
     width: 227px;
-    background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 205px;
+    background: url(../img/world.svg) no-repeat 26px,
+      url(../img/select-icon.svg) no-repeat 205px;
   }
 }
 
@@ -743,5 +746,144 @@ p {
   .scroll--up {
     width: 80px;
     height: 80px;
+  }
+}
+
+/* Tavern */
+
+.tavern {
+  background: url("../img/pushkin-xs.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover;
+  height: 255px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .tavern {
+    display: flex;
+    align-items: center;
+    background: url("../img/pushkin-md.jpg") no-repeat center;
+    background-position: center;
+    background-size: cover;
+    height: 364px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .tavern {
+    background: url("../img/pushkin.jpg") no-repeat center;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.tavern__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  width: 100%;
+  height: 180px;
+  padding: 24px 0;
+  margin-top: 131px;
+}
+
+@media (min-width: 768px) {
+  .tavern__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 204px;
+    padding: 38px 48px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tavern__item {
+    padding: 34px;
+  }
+}
+
+.tavern__title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #1d1d1d;
+  width: 100%;
+  margin: 0px;
+}
+
+@media (min-width: 768px) {
+  .tavern__title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
+}
+
+.tavern__info {
+  font-size: 14px;
+  line-height: 16px;
+  color: #626262;
+  margin: 40px 0 0;
+}
+
+@media (min-width: 768px) {
+  .tavern__info {
+    margin: 62px 0 0;
+  }
+}
+
+.tavern__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  border-radius: 16px;
+  background: #262626;
+  width: 98px;
+  height: 32px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .tavern__time {
+    margin: 0px;
+  }
+}
+
+/* Navigation */
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    height: 80px;
+  }
+  .nav__link {
+    color: #626262;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 40px;
+    text-decoration: none;
+  }
+  .nav__link--active {
+    color: #327430;
   }
 }

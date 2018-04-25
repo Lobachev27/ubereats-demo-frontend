@@ -626,7 +626,7 @@ p {
   }
 }
 
-.tavern__title {
+.tavern__name {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -636,7 +636,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  .tavern__title {
+  .tavern__name {
     font-size: 36px;
     line-height: 42px;
     text-align: left;

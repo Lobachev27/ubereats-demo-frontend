@@ -193,8 +193,6 @@
   }
 }
 
-/* Базовые стили */
-
 html {
   box-sizing: border-box;
 }
@@ -204,6 +202,8 @@ html {
 *:before {
   box-sizing: inherit;
 }
+
+/* Базовые стили */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -231,8 +231,6 @@ p {
   background: #fff;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
-
-/* Logo */
 
 .logo {
   display: flex;
@@ -263,8 +261,6 @@ p {
     width: 121px;
   }
 }
-
-/* Location */
 
 .location {
   display: none;
@@ -300,16 +296,16 @@ p {
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
-  color: #1d1d1d;
   font-size: 13px;
+  color: #1d1d1d;
   line-height: 24px;
-  text-align: center;
-  text-align-last: center;
+  margin-top: 8px;
   appearance: none;
   -moz-appearance: none;
   -ms-progress-appearance: none;
   -webkit-appearance: none;
-  margin-top: 8px;
+  text-align: center;
+  text-align-last: center;
 }
 
 @media (min-width: 768px) {
@@ -328,7 +324,7 @@ p {
 
 .location__text {
   display: inline-flex;
-  margin: 0px 9px;
+  margin: 0px 9px 0px 9px;
 }
 
 @media (min-width: 768px) {
@@ -349,7 +345,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 205px;
+  width: 207px;
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
@@ -364,6 +360,7 @@ p {
 
 @media (min-width: 768px) {
   .location__address {
+    font-size: 13px;
     width: 215px;
     margin-top: 0px;
   }
@@ -388,8 +385,6 @@ p {
 .location__label:first-child {
   margin-right: 16px;
 }
-
-/* Buttons */
 
 .header__buttons {
   display: flex;
@@ -484,7 +479,7 @@ p {
   }
 }
 
-/* Restaurants */
+/* Restaurant-list */
 
 .restaurant-list {
   margin-bottom: 48px;
@@ -579,7 +574,8 @@ p {
   height: 40px;
   border: none;
   border-radius: 2px;
-  background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 150px;
+  background: url(../img/world.svg) no-repeat 26px,
+    url(../img/select-icon.svg) no-repeat 150px;
   color: #fff;
   font-size: 13px;
   line-height: 15px;
@@ -595,14 +591,16 @@ p {
 @media (min-width: 768px) {
   .footer__select {
     width: 176px;
-    background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 153px;
+    background: url(../img/world.svg) no-repeat 26px,
+      url(../img/select-icon.svg) no-repeat 153px;
   }
 }
 
 @media (min-width: 992px) {
   .footer__select {
     width: 227px;
-    background: url(../img/world.svg) no-repeat 26px, url(../img/select-icon.svg) no-repeat 205px;
+    background: url(../img/world.svg) no-repeat 26px,
+      url(../img/select-icon.svg) no-repeat 205px;
   }
 }
 
@@ -685,7 +683,7 @@ p {
 .footer__app--googleplay {
   width: 124px;
   height: 36px;
-  background: url(../img/googleplay.png) no-repeat;
+  background: url(../img/googleplay.svg) no-repeat;
   background-size: cover;
   margin: 25px 12px;
 }
@@ -804,7 +802,7 @@ p {
 
 @media (min-width: 992px) {
   .tavern__item {
-    padding: 34px;
+    padding: 38px;
   }
 }
 

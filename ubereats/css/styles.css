@@ -27,7 +27,13 @@ p {
 }
 
 .container {
-  max-width: 972px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
 }
 
 /* Header */
@@ -39,6 +45,11 @@ p {
   height: 72px;
   background: #fff;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -611,7 +622,7 @@ p {
 
 @media (min-width: 992px) {
   .tavern__item {
-    padding: 38px;
+    padding: 36px;
   }
 }
 

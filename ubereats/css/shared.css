@@ -348,25 +348,25 @@ p {
   display: flex;
 }
 
-.social__item {
+.social__icon {
   display: inline-flex;
   width: 24px;
   height: 24px;
   margin-right: 12px;
 }
 
-.social__item--facebook {
+.social__icon--facebook {
   background: url("../img/facebook.svg") no-repeat;
   position: relative;
   left: 3px;
   top: 3px;
 }
 
-.social__item--twitter {
+.social__icon--twitter {
   background: url("../img/twitter.svg") no-repeat;
 }
 
-.social__item--instagram {
+.social__icon--instagram {
   background: url("../img/instagram.svg") no-repeat;
 }
 

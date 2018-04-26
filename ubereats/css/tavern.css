@@ -28,7 +28,7 @@
   }
 }
 
-.tavern__item {
+.tavern__description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: 768px) {
-  .tavern__item {
+  .tavern__description {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: 992px) {
-  .tavern__item {
+  .tavern__description {
     padding: 36px;
   }
 }
@@ -186,7 +186,7 @@
   }
 }
 
-.menu__items {
+.menu__block {
   display: flex;
   margin: 16px 0 0;
   justify-content: space-between;
@@ -195,7 +195,7 @@
 }
 
 @media (min-width: 768px) {
-  .menu__items {
+  .menu__block {
     margin: 32px 0 0;
     background: rgba(117, 117, 117, 0.04);
     padding-left: 24px;

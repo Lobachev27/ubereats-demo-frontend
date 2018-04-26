@@ -53,9 +53,6 @@ p {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  height: 40px;
   width: 107px;
 }
 
@@ -64,12 +61,12 @@ p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.logo__item {
-  align-items: center;
+.logo__image {
   width: 107px;
+  padding-top: 14px;
 }
 
-.logo__item--footer {
+.logo__image--footer {
   width: 192px;
 }
 
@@ -77,8 +74,9 @@ p {
   .logo {
     width: 121px;
   }
-  .logo__item {
+  .logo__image {
     width: 121px;
+    padding-top: 13px;
   }
 }
 
